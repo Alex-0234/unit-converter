@@ -22,7 +22,7 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
 
 ## 📦 Changelog
 
-### [v1.0] - 2025-07-20
+### [v1.0] - 2025-07-24
 - Initial release with length, weight, and mass conversions
 - Created base HTML structure
 - Added basic CSS styling and layout
@@ -32,6 +32,10 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
 - Added input validation using `isNaN()`
 - Added Google Fonts (Poppins) and hover effects
 - Updated README with full documentation
+
+- ### [v1.2] - 2025-07-25
+- Added unit symbols in the result
+- Replaced `if / else if` with `switch statements`
 
 ---
 
