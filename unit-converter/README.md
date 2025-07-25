@@ -29,16 +29,6 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
 - Updating text content dynamically
 - Using `onclick` to trigger functions
 
-### Example logic:
-```js
-if (inputOption === "cm to mm") {
-    output = inputValue * 10;
-} else if (inputOption === "g to kg") {
-    output = inputValue / 1000;
-} else {
-    result.textContent = "Please enter a valid number.";
-}
-
 ## 📦 Changelog
 
 ### [v1.0] - 2025-07-20
@@ -51,3 +41,13 @@ if (inputOption === "cm to mm") {
 - Added input validation using `isNaN()`
 - Added Google Fonts (Poppins) and hover effects
 - Updated README with full documentation
+  
+### Example logic:
+```js
+if (inputOption === "cm to mm") {
+    output = inputValue * 10;
+} else if (inputOption === "g to kg") {
+    output = inputValue / 1000;
+} else {
+    result.textContent = "Please enter a valid number.";
+}
