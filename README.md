@@ -1,6 +1,6 @@
 # 🔄 Unit Converter
 
-A beginner level **unit converter** built using HTML, CSS, and JavaScript. This project supports multiple unit conversions and reinforces understanding of DOM manipulation, styling, and conditional logic using `if / else if`.
+A beginner level **unit converter** built using HTML, CSS, and JavaScript. This project supports multiple unit conversions and reinforces understanding of DOM manipulation, styling, and conditional logic using `case statement`.
 
 ## 🚀 Features
 
@@ -41,7 +41,7 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
 
 ## 🧠 JavaScript Concepts Used
 
-- `if / else if / else` conditional logic
+- `switch` conditional logic
 - `parseFloat()` for number handling
 - `isNaN()` for input validation
 - DOM access via `querySelector()` and `getElementById()`
@@ -50,12 +50,13 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
 
 ### Example logic:
 ```js
-if (inputOption === "cm to mm") {
-    output = inputValue * 10;
-} else if (inputOption === "g to kg") {
-    output = inputValue / 1000;
-} else {
-    result.textContent = "Please enter a valid number.";
+switch (inputOption) {
+        case "mm to cm":
+            output = inputValue / 10 + "cm";
+        break;
+         case "cm to mm":
+            output = inputValue * 10 + "mm";
+        break;
 }
 
 
