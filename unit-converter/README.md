@@ -19,16 +19,6 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
   - kg ↔ g
 
 ---
-
-## 🧠 JavaScript Concepts Used
-
-- `if / else if / else` conditional logic
-- `parseFloat()` for number handling
-- `isNaN()` for input validation
-- DOM access via `querySelector()` and `getElementById()`
-- Updating text content dynamically
-- Using `onclick` to trigger functions
-
 ## 📦 Changelog
 
 ### [v1.0] - 2025-07-20
@@ -41,7 +31,18 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
 - Added input validation using `isNaN()`
 - Added Google Fonts (Poppins) and hover effects
 - Updated README with full documentation
-  
+
+---
+
+## 🧠 JavaScript Concepts Used
+
+- `if / else if / else` conditional logic
+- `parseFloat()` for number handling
+- `isNaN()` for input validation
+- DOM access via `querySelector()` and `getElementById()`
+- Updating text content dynamically
+- Using `onclick` to trigger functions
+ 
 ### Example logic:
 ```js
 if (inputOption === "cm to mm") {
