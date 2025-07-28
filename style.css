@@ -1,90 +1,259 @@
+html {
+    background-color: rgb(0, 0, 0);
+}
 body {
-    margin: 0;
-    background-color: rgb(14, 0, 24);
     font-family: 'Poppins', sans-serif;
-}
-.header {
-    text-align: center;
-    padding-left:40px;
-    margin-top:120px;
-    color:white;
-    font-family:  'Poppins', sans-serif;
-    font-size: 40px;
-}
-.page-content {
-    height: 100vh;
-    display: flex;
+    display:flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
+    flex-direction: column;
+    height:40svh;
+
+}
+
+.header {
+    width:100vw;
+    height:auto;
+    text-align: center;
+    font-size:18px;
+}
+
+.page-content {
+    display:flex;
+    min-width:216px;
+    justify-content: center;
+    align-items: center;
+    max-width: 340px;
+    width:90%;
+    height:auto;
+    background-color: rgba(45,45,45,0.4); 
+    border:solid 2px black;
+    border-radius: 10px;
 }
 
 .converter-box {
-    display: flex;
-    height: 200px;
-    width: 600px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: solid 2px rgb(160, 160, 160);
-    border-radius: 25px;
-    padding-top: 50px;
-    transition: 0.15s;
+    width:95%;
+    min-width:218px;
+    padding: 10px 10px 0 10px;
+    height:auto;
+    width:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
 }
-    .converter-box:hover {
-        background-color: rgba(10, 10, 10, 0.8);
+
+.selectOption1 {
+    grid-column: 1;
+    grid-row:1;
+    height:40px;
+    margin: 10px 5px 0 5px;
+    border-radius: 6px;
+    background-color: white;
+    color:black;
+    opacity: 0.9;
+    transition:0.15s;
+}
+.in-between {
+    grid-column: 2;
+    grid-row:1;
+    margin-top: 20px;
+    text-align: center ;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+.selectOption2 {
+    grid-column: 3;
+    grid-row:1;
+    height:40px;
+    margin: 10px 5px 0 5px;
+    border-radius: 6px;
+    background-color: white;
+    color:black;
+    opacity: 0.9;
+    transition:0.15s;
+}
+
+.inputValue {
+    grid-column: 1 / span 3;
+    grid-row:2;
+    height:40px;
+    margin: 10px 5px 0 5px;
+    padding:10px 0 10px 0;
+    border-radius: 6px;
+    background-color: white;
+    color:black;
+    opacity: 0.9;
+    transition:0.15s;
+}
+.inputValue:hover {
+    cursor:text;
+    scale: 1.01;
+    opacity: 1;
+}
+
+.convert {
+    grid-column: 1 / span 3;
+    grid-row:3;
+    height:40px;
+    margin: 10px 5px 0 5px;
+    padding:10px 0 10px 0;
+    border-radius: 15px;
+    background-color: blueviolet;
+    color:white;
+    opacity: 0.9;
+    transition:0.15s;
+}
+.convert:hover {
+    cursor:pointer;
+    scale: 1.01;
+    opacity: 1;
+}
+
+.selectOption1:hover {
+    cursor:pointer;
+    scale: 1.01;
+    opacity: 1;
+}
+.selectOption2:hover {
+    cursor:pointer;
+    scale: 1.01;
+    opacity: 1;
+}
+
+#result {
+    grid-column: 1 / span 3;
+    grid-row:4;
+    height:40px;
+    margin: 10px 5px 10px 5px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    color: white
+
+}
+    #result,.selectOption1, .selectOption2, .page-content, .inputValue,.in-between,.header,.converter-box,.convert {
+        height:auto;
+        font-size: 15px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 500;
     }
 
+
+@media screen and (min-width:480px) {
+    body {
+        height:90svh;
+    }
+    .converter-box {
+        padding:10px 20px 0 20px;
+        height:auto;
+    }
+    .page-content {
+        width: auto;
+        height: auto;
+        max-width:420px;
+    }
+        .inputValue,.inputOption1,.inputOption2,.convert {
+        border-radius:8px;
+    }
+    #result,.selectOption1, .selectOption2, .page-content, .inputValue,.in-between,.header,.converter-box,.convert {
+        height:auto;
+        font-size: 20px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    body {
+        height:100lvh;
+    }
+    .converter-box {
+        padding:10px 20px 0 20px;
+        height:auto;
+    }
+    .page-content {
+        width: auto;
+        height: auto;
+        max-width:600px;
+    }
+    .inputValue,.selectOption1,.selectOption2,.convert {
+        border-radius:10px;
+    }
+    #result,.selectOption1, .selectOption2, .page-content, .inputValue,.in-between,.header,.converter-box,.convert {
+        height:auto;
+        font-size: 30px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        height:90vh;
+    }
+    .converter-box {
+        padding:10px 20px 0 20px;
+        height:auto;
+    }
+    .page-content {
+        width: 750px;
+        height: auto;
+
+    }
+    .inputValue,.selectOption1,.selectOption2,.convert {
+        border-radius:20px;
+    }
+    #result,.selectOption1, .selectOption2, .page-content, .inputValue,.in-between,.header,.converter-box,.convert {
+        height:auto;
+        font-size: 30px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 600;
+    }
+
+}    
+@media screen and (min-width:1768px) {
+    body {
+        height:90vh;
+    }
+    .converter-box {
+        padding:50px;
+        height:auto;
+        width: auto;
+    }
+    .page-content {
+        min-width:800px;
+        width: auto;
+        height: auto;
+        border-radius:20px;
+    }
+    .inputValue,.selectOption1,.selectOption2,.convert {
+        border-radius:25px;
+    }
+    .selectOption1, .selectOption2, .page-content, .inputValue,.in-between,.header,.converter-box,.convert {
+        height:auto;
+        font-size: 50px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 600;
+    }
     .inputValue {
-        width:200px;
-        height:40px;
-        border:none;
-        border-radius: 10px;
-        font-family:  'Poppins', sans-serif;;
-        font-weight: 500;
-        Opacity: 0.5;
-        transition: 0.15s;
+        margin-bottom:20px;
     }
-    .inputValue:hover {
-        Opacity: 1;
-
+    .selectOption1, .selectOption2 {
+        margin-bottom:20px;
     }
-    
-
-    .selectOption {
-        width:120px;
-        height:40px;
-        color:black;
-        font-family:  'Poppins', sans-serif;;
-        font-weight: 500;
-        border-radius: 5px;
-        cursor: pointer;
-        Opacity: 0.5;
-        transition: 0.15s;
+    .in-between {
+        padding-top:10px;
     }
-    .selectOption:hover {
-        Opacity: 1;
-    }
-
-    .convert {
-        width:100px;
-        height:42px;
-        font-family:  'Poppins', sans-serif;;
-        font-weight: 500;
-        border-radius: 5px;
-        cursor: pointer;
-        Opacity: 0.5;
-        transition: 0.15s;
-    }
-        .convert:hover {
-        Opacity: 1;
-    }
-
     #result {
-        margin-top:20px;
-        height:40px;
-        width:200px;
-        color:rgb(199, 199, 199);
-        font-family:  'Poppins', sans-serif;;
-        font-weight: 500;
-        
+        font-size: 35px;
+        font-weight: 600;
+
     }
+
+}    
+
