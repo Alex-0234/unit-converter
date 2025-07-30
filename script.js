@@ -4,7 +4,6 @@
     const resultElement = document.getElementById("result");
 
 function convert() {
-    let output = null;
     const inputOption1 =  inputOption1Element.value;
     const inputOption2 =  inputOption2Element.value;
     const inputOption = inputOption1 + " to " + inputOption2;
@@ -71,10 +70,9 @@ function convert() {
         break;
     }
 
-         if (!output) {
+        if (!output) {
             resultElement.textContent = "Please enter a valid conversion.";
             return;
         }
-
     resultElement.textContent = "Result: " + output;
 }

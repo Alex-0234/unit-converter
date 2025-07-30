@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Converter</title>
+    <title>Unit Converter</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-<style>
-</style>
-
 </head>
 <body>
     <header class="header">
@@ -17,7 +14,7 @@
     <div class="page-content">
         <main class="converter-box">
                 <input class="inputValue" type="text" placeholder=" Insert value..">
-                <select class="selectOption1" name="select" > 
+                <select class="selectOption1" name="select" aria-label="Convert from unit"> 
                     <option>mm</option>
                     <option>cm</option>
                     <option>m</option>
@@ -30,7 +27,7 @@
                     
                 </select>
                 <p class="in-between"> To </p>
-                <select class="selectOption2" name="select">
+                <select class="selectOption2" name="select" aria-label="Convert to unit">
                     <option>mm</option>
                     <option>cm</option>
                     <option>m</option>

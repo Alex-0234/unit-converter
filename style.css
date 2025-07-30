@@ -1,5 +1,6 @@
 html {
     background-color: rgb(0, 0, 0);
+    font-size: clamp(1rem,2vw,1.8rem);
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -7,47 +8,44 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height:40svh;
-
+    height:60vh;
+    margin:0;
 }
 
 .header {
     width:100vw;
     height:auto;
     text-align: center;
-    font-size:18px;
 }
 
 .page-content {
     display:flex;
-    min-width:216px;
     justify-content: center;
     align-items: center;
-    max-width: 340px;
+    max-width: 18rem;
     width:90%;
     height:auto;
     background-color: rgba(45,45,45,0.4); 
     border:solid 2px black;
-    border-radius: 10px;
+    border-radius: 0.8rem;
 }
 
 .converter-box {
     width:95%;
-    min-width:218px;
-    padding: 10px 10px 0 10px;
+    padding: 0.6rem 0.6rem 0 0.6rem;
     height:auto;
     width:auto;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
 }
 
 .selectOption1 {
     grid-column: 1;
     grid-row:1;
-    height:40px;
-    margin: 10px 5px 0 5px;
-    border-radius: 6px;
+    margin-top:0.5rem;
+    max-height:2.5rem;
+    border-radius: 0.6rem;
     background-color: white;
     color:black;
     opacity: 0.9;
@@ -56,31 +54,31 @@ body {
 .in-between {
     grid-column: 2;
     grid-row:1;
-    margin-top: 20px;
+    margin-top: 1rem;
+
     text-align: center ;
     color: white;
     font-weight: 700;
-    font-size: 20px;
 }
 .selectOption2 {
     grid-column: 3;
     grid-row:1;
-    height:40px;
-    margin: 10px 5px 0 5px;
-    border-radius: 6px;
+    margin-top:0.5rem;
+    max-height:2.5rem;
+    border-radius: 0.6rem;
     background-color: white;
     color:black;
     opacity: 0.9;
     transition:0.15s;
 }
 
+
 .inputValue {
     grid-column: 1 / span 3;
     grid-row:2;
-    height:40px;
-    margin: 10px 5px 0 5px;
-    padding:10px 0 10px 0;
-    border-radius: 6px;
+    height:2.2rem;
+    padding:0.4rem 0 0.4rem 0;
+    border-radius: 0.6rem;
     background-color: white;
     color:black;
     opacity: 0.9;
@@ -92,13 +90,14 @@ body {
     opacity: 1;
 }
 
+
 .convert {
     grid-column: 1 / span 3;
     grid-row:3;
-    height:40px;
-    margin: 10px 5px 0 5px;
-    padding:10px 0 10px 0;
-    border-radius: 15px;
+    height:2.2rem;
+    margin: 0.6rem 0 0.4rem 0;
+    padding:0.6rem 0 0.6rem 0;
+    border-radius: 0.6rem;
     background-color: blueviolet;
     color:white;
     opacity: 0.9;
@@ -124,136 +123,24 @@ body {
 #result {
     grid-column: 1 / span 3;
     grid-row:4;
-    height:40px;
-    margin: 10px 5px 10px 5px;
-    font-size: 12px;
+    height:2.2rem;
+    margin: 0.6rem 0.4rem 0.6rem 0.4rem;
+    font-size: 0.8rem;
     text-align: center;
     color: white;
 }
 
 h1 {
-    color: white
+    color: white;
+    margin-top: 1rem;
+    margin-bottom:0.4rem;
 
 }
     #result,.selectOption1, .selectOption2, .page-content, .inputValue,.in-between,.header,.converter-box,.convert {
         height:auto;
-        font-size: 15px;
+        font-size: 1rem;
         font-family: 'Poppins',sans-serif;
         font-weight: 500;
     }
 
-
-@media screen and (min-width:480px) {
-    body {
-        height:90svh;
-    }
-    .converter-box {
-        padding:10px 20px 0 20px;
-        height:auto;
-    }
-    .page-content {
-        width: auto;
-        height: auto;
-        max-width:420px;
-    }
-        .inputValue,.inputOption1,.inputOption2,.convert {
-        border-radius:8px;
-    }
-    #result,.selectOption1, .selectOption2, .page-content, .inputValue,.in-between,.header,.converter-box,.convert {
-        height:auto;
-        font-size: 20px;
-        font-family: 'Poppins',sans-serif;
-        font-weight: 600;
-    }
-
-}
-
-@media screen and (min-width:768px) {
-    body {
-        height:100lvh;
-    }
-    .converter-box {
-        padding:10px 20px 0 20px;
-        height:auto;
-    }
-    .page-content {
-        width: auto;
-        height: auto;
-        max-width:600px;
-    }
-    .inputValue,.selectOption1,.selectOption2,.convert {
-        border-radius:10px;
-    }
-    #result,.selectOption1, .selectOption2, .page-content, .inputValue,.in-between,.header,.converter-box,.convert {
-        height:auto;
-        font-size: 30px;
-        font-family: 'Poppins',sans-serif;
-        font-weight: 600;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    body {
-        height:90vh;
-    }
-    .converter-box {
-        padding:10px 20px 0 20px;
-        height:auto;
-    }
-    .page-content {
-        width: 750px;
-        height: auto;
-
-    }
-    .inputValue,.selectOption1,.selectOption2,.convert {
-        border-radius:20px;
-    }
-    #result,.selectOption1, .selectOption2, .page-content, .inputValue,.in-between,.header,.converter-box,.convert {
-        height:auto;
-        font-size: 30px;
-        font-family: 'Poppins',sans-serif;
-        font-weight: 600;
-    }
-
-}    
-@media screen and (min-width:1768px) {
-    body {
-        height:90vh;
-    }
-    .converter-box {
-        padding:50px;
-        height:auto;
-        width: auto;
-    }
-    .page-content {
-        min-width:800px;
-        width: auto;
-        height: auto;
-        border-radius:20px;
-    }
-    .inputValue,.selectOption1,.selectOption2,.convert {
-        border-radius:25px;
-    }
-    .selectOption1, .selectOption2, .page-content, .inputValue,.in-between,.header,.converter-box,.convert {
-        height:auto;
-        font-size: 50px;
-        font-family: 'Poppins',sans-serif;
-        font-weight: 600;
-    }
-    .inputValue {
-        margin-bottom:20px;
-    }
-    .selectOption1, .selectOption2 {
-        margin-bottom:20px;
-    }
-    .in-between {
-        padding-top:10px;
-    }
-    #result {
-        font-size: 35px;
-        font-weight: 600;
-
-    }
-
-}    
 

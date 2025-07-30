@@ -34,7 +34,7 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
 - Added Google Fonts (Poppins) and hover effects
 - Updated README with full documentation
 
-- ### [v1.2] - 2025-07-25
+### [v1.2] - 2025-07-25
 - Added unit symbols in the result
 - Replaced `if / else if` with `switch`
 
@@ -47,6 +47,12 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
 - Added another dropdown menu to manually select conversion.
 - Added temperature conversions.
 
+### [v1.4] - 2025-07-28
+- Rebuilt responsive design:
+    - Deleted `@media` queries, replaced with rem units.
+    - Added `clamp()` in html for scaling
+    - Changed `body` height to 60vh.
+    - Added `aria-label` for the `select` element.
 
 ---
 
