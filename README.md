@@ -18,25 +18,28 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
   - Grams (g)
   - Kilograms (kg)
   - Pounds (pounds)
+  - Celsius
+  - Fahrenheit
+  - Kelvin
 
 ---
 
 ## 📦 Changelog
 
 ### [v1.0] - 2025-07-24
-- Initial release with length, weight, and mass conversions
-- Created base HTML structure
-- Added basic CSS styling and layout
+- Initial release with length, weight, and mass conversions.
+- Created base HTML structure.
+- Added basic CSS styling and layout.
 
 ### [v1.1] - 2025-07-25
-- Improved design and layout with Flexbox
-- Added input validation using `isNaN()`
-- Added Google Fonts (Poppins) and hover effects
-- Updated README with full documentation
+- Improved design and layout with Flexbox.
+- Added input validation using `isNaN()`.
+- Added Google Fonts (Poppins) and hover effects.
+- Updated README with full documentation.
 
-### [v1.2] - 2025-07-25
-- Added unit symbols in the result
-- Replaced `if / else if` with `switch`
+### [v1.2] - 2025-07-26
+- Added unit symbols in the result.
+- Replaced `if / else if` with `switch`.
 
 ### [v1.3] - 2025-07-28
 - Enhanced responsive design:
@@ -47,10 +50,10 @@ A beginner level **unit converter** built using HTML, CSS, and JavaScript. This 
 - Added another dropdown menu to manually select conversion.
 - Added temperature conversions.
 
-### [v1.4] - 2025-07-28
+### [v1.4] - 2025-07-30
 - Rebuilt responsive design:
     - Deleted `@media` queries, replaced with rem units.
-    - Added `clamp()` in html for scaling
+    - Added `clamp()` in html for scaling.
     - Changed `body` height to 60vh.
     - Added `aria-label` for the `select` element.
 
